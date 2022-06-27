@@ -1,0 +1,32 @@
+{
+  "name": "ecommerce-back_end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "node index.server.js",
+    "start": "nodemon ./src/index.server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "E-Commerce",
+    "Mern",
+    "project",
+    "backend",
+    "api",
+    "user_info"
+  ],
+  "author": "Akash Muhammad Abrrar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "mongoose": "^6.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}

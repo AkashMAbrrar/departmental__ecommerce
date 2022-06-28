@@ -15,11 +15,7 @@ env.config();
 // MongoDb Connection
 // mongodb+srv://departmental-ecommerce:<password>@cluster0.xktbt.mongodb.net/?retryWrites=true&w=majority
 mongoose.connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.xktbt.mongodb.net/?retryWrites=true&w=majority`,
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    }
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.xktbt.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`
 ).then(() => {
     console.log('Database connected');
 });
